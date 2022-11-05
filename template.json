@@ -1,0 +1,217 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc"
+    ],
+    "templates": {
+      "base": {
+        "health": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "power": {
+          "value": 5,
+          "min": 0,
+          "max": 5
+        },
+        "biography": ""
+      }
+    },
+    "character": {
+      "templates": [
+        "base"
+      ],
+      "info": {
+        "age": 25,
+        "pronouns": "",
+        "identity": "",
+        "departments": {
+          "research": {
+            "label": "Research",
+            "style": "",
+            "value": false
+          },
+          "medical": {
+            "label": "Medical",
+            "style": "",
+            "value": false
+          },
+          "administration": {
+            "label": "Administration",
+            "style": "",
+            "value": false
+          },
+          "signals": {
+            "label": "Signals",
+            "style": "",
+            "value": false
+          },
+          "tactical": {
+            "label": "Tactical",
+            "style": "",
+            "value": false
+          },
+          "security": {
+            "label": "Security",
+            "style": "",
+            "value": false
+          },
+          "astrogation": {
+            "label": "Astrogation",
+            "style": "",
+            "value": false
+          },
+          "engineering": {
+            "label": "Engineering",
+            "style": "",
+            "value": false
+          }
+        },
+        "impulses": {
+          "generous": {
+            "label": "Generous",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you make a sacrifice for a stranger with no expectation of return. (Guarded)",
+            "opposite": "Guarded"
+          },
+          "bold": {
+            "label": "Bold",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you rush in or suddenly escalate a situation to gain the advantage. (Patient)",
+            "opposite": "Patient"
+          },
+          "logical": {
+            "label": "Logical",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you lay out and follow through on a multi-step plan. (Intuitive)",
+            "opposite": "Intuitive"
+          },
+          "cynical": {
+            "label": "Cynical",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you lie to, mislead, or trick people to get your way. (Honest)",
+            "opposite": "Honest"
+          },
+          "affectionate": {
+            "label": "Affectionate",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you get entangled (romantically or platonically) with someone new. (Reserved)",
+            "opposite": "Reserved"
+          },
+          "eager": {
+            "label": "Eager",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you volunteer to be the one to face danger or consequence. (Hesitant)",
+            "opposite": "Hesitant"
+          },
+          "righteous": {
+            "label": "Righteous",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you see to it that a wrongdoer is held to account. (Forgiving)",
+            "opposite": "Forgiving"
+          },
+          "curious": {
+            "label": "Curious",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you go out of your way to learn something for its own sake. (Focused)",
+            "opposite": "Focused"
+          },
+          "adventurous": {
+            "label": "Adventurous",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you try something risky you’ve never done before. (Cautious)",
+            "opposite": "Cautious"
+          },
+          "defiant": {
+            "label": "Defiant",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you challenge, disobey, or stand up to self-styled authority. (Loyal)",
+            "opposite": "Loyal"
+          },
+          "ambitious": {
+            "label": "Ambitious",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you make history and get recognition. (Humble)",
+            "opposite": "Humble"
+          },
+          "idealistic": {
+            "label": "Idealistic",
+            "status": 0,
+            "points" : 0,
+            "description" : "When you defend or act out your beliefs, or evangelise it to another. (Neutral)",
+            "opposite": "Neutral"
+          }
+        },
+        "relationships": {
+          "bestie": "",
+          "crush": "",
+          "rival": ""
+        },
+        "psychic": 0
+      }
+    },
+    "npc": {
+      "templates": [
+        "base"
+      ],
+      "cr": 0
+    }
+  },
+  "Item": {
+    "types": [
+      "item",
+      "feature",
+      "trait",
+      "cert",
+      "patch"
+    ],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "item": {
+      "templates": [
+        "base"
+      ],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "feature": {
+      "templates": [
+        "base"
+      ]
+    },
+    "trait": {
+      "complexity": "Low",
+      "tags": ""
+    },
+    "cert": {
+      "templates": [
+        "base"
+      ],
+      "rank": 1,
+      "xp": 0
+    },
+    "patch": {
+      "templates": [
+        "base"
+      ],
+      "rank": 1
+    }
+  }
+}

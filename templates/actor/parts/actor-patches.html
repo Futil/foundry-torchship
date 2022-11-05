@@ -1,0 +1,16 @@
+<ol class="" style="position: absolute; left: 56px; top: 30px;">
+
+    {{#each patches as |item id|}}
+    <li class="patches item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name list-roll" style="color: {{item.system.color}}">
+            <a class="item-control item-delete" title="Delete Item">
+                <img src="{{item.img}}" title="{{item.name}}" style="width: 30px; height: auto;"" />
+            </a>
+        </div>
+        <!-- <div class="item-controls" style="flex: 1;">
+        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+      </div> -->
+    </li>
+    {{/each}}
+</ol>

@@ -1,0 +1,21 @@
+<section>
+    <aside class="sidebar">
+        <div class="impulse-grid">
+            {{#each system.info.impulses as |impulse key|}}
+            <div id="parent" class="ability flexrow flex-center flex-between" data-item-id="{{item._id}}">
+                <label for='system.info.impulses.{{key}}.value' style="{{impulse.style}}"
+                    class='impulse-selector rollable flexlarge align-center' , data-label='{{impulse.label}}'
+                    data-key='{{key}}'>{{impulse.label}} {{#if impulse.points}}
+                    <span style="opacity: 50%;">{{impulse.points}}</span> {{/if}}
+                </label>
+                <span style="position: relative; flex: none; ">
+                    <div class="hover-box hidden-child" style="width: 250px; top: 100%; right: -80px;">{{impulse.description}}
+                        <hr><span style="opacity: 50%;">Hold Shift and click to change status<br>Left Mouse +1, Right
+                            Mouse -1</span>
+                    </div>
+                </span>
+            </div>
+            {{/each}}
+        </div>
+    </aside>
+</section>
